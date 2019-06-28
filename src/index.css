@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.hidden {
+  display: none;
+}
+
+.canvas-class {
+  border: 1px solid #000;
+}
+
+.stop {
+  float: left;
+  margin-right: 200px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.start {
+  font-size: 20px;
+}
