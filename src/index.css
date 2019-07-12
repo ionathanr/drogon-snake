@@ -1,10 +1,16 @@
+html, #root {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ddd2a7;
 }
 
 code {
@@ -12,12 +18,49 @@ code {
     monospace;
 }
 
+.game {
+  /* margin-top: 30px; */
+  padding: 20px;
+}
+
 .hidden {
   display: none;
 }
 
+.score {
+  margin: 30px 100px;
+  display: block;
+}
+
+.canvas-outerborder {
+  background-color: #6e3b3b;
+}
+
 .canvas-class {
-  border: 1px solid #000;
+  border: 30px solid #6e3b3b;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+  background-color: #5c7658;
+  padding: 0px;
+}
+
+.canvas-class.nes-container {
+  padding: 0px;
+}
+
+.button-container {
+  width: 20%;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto 15px;
+  padding: 0;
+}
+
+ul li {
+  float: left;
+  margin: 10px;
 }
 
 .stop {

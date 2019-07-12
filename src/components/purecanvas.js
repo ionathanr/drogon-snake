@@ -36,7 +36,7 @@ export default class PureCanvas extends React.Component {
 
   render() {
     return (
-      <canvas
+      <canvas className="canvas-class nes-container is-rounded"
         tabIndex="0" 
         onKeyPress={this.onKeyPress}
         width={this.props.width}
