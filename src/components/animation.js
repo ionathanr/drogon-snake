@@ -255,11 +255,25 @@ export default class Animation extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row d-flex justify-content-center game">
-          <div className="col-sm score">
-            <a href="#" className="nes-badge is-splited">
-              <span className="is-dark">Score</span>
-              <span className="is-success">{this.state.size - this.size}</span>
-            </a>
+          <div className="col-sm-2 score">
+            <div>
+              <a href="#" className="nes-badge is-splited">
+                <span className="is-dark">Score</span>
+                <span className="is-success">{this.state.size - this.size}</span>
+              </a>
+            </div>
+            <div className="controlls-container">
+              <div class="nes-container with-title is-centered">
+                <p class="title">Instructions</p>
+                <img ref="wasd" src={process.env.PUBLIC_URL + '/img/wasd2.png'} alt="wasd" className="" />
+                <br />
+                <br />
+                <div>W - move up</div>
+                <div>A - move left</div>
+                <div>S - move down</div>
+                <div>D - move right</div>
+              </div>
+            </div>
           </div>
           <div className="col-sm nes-container is-rounded canvas-outerborder">
             <Canvas  
@@ -307,6 +321,7 @@ export default class Animation extends React.Component {
         <img ref="imageDown" src={process.env.PUBLIC_URL + '/img/head_down.png'} alt="head_down" className="hidden" />
         <img ref="imageUp" src={process.env.PUBLIC_URL + '/img/head_up.png'} alt="head_up" className="hidden" />
         <img ref="sheep" src={process.env.PUBLIC_URL + '/img/sheep.png'} alt="head_up" className="hidden" />
+        <img ref="wasd" src={process.env.PUBLIC_URL + '/img/wasd2.png'} alt="wasd" className="hidden" />
       </div>
     )
   }

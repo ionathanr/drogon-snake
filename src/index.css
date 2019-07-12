@@ -44,6 +44,14 @@ code {
   padding: 0px;
 }
 
+.controlls-container {
+  margin-top: 60px;
+}
+
+.controlls-container img {
+  width: 100px;
+}
+
 .canvas-class.nes-container {
   padding: 0px;
 }
@@ -72,4 +80,9 @@ ul li {
 
 .start {
   font-size: 20px;
+}
+
+.nes-container.with-title.is-centered>.title {
+  margin: -2.3rem auto 1rem;
+  background-color: #ddd2a7;
 }
